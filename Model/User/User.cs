@@ -1,7 +1,7 @@
 ﻿using Model.Base;
 using SqlSugar;
 
-namespace Model
+namespace Model.User
 {
     public record class User : ModelBase
     {
@@ -11,6 +11,9 @@ namespace Model
         public string Username { get; set; }
 
         public string Password { get; set; }
+
+        [SugarColumn(IsNullable = true)]
+        public string Token { get; set; }
 
         [SugarColumn(IsNullable = true)]
         public DateTime? LastLoginTime { get; set; }
