@@ -10,6 +10,7 @@ namespace Helper
         static HttpResultHelper()
         {
             errorCodes.Add("000000", "成功");
+            errorCodes.Add("000001", "路由异常");
             errorCodes.Add("000003", "参数异常");
         }
 
